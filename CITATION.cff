@@ -1,0 +1,31 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: Race-Engineering 
+authors:
+  - family-names: Marcel de Campos Ferreira 
+    given-names: Ian
+  - family-names: Clapton Maciel Barbosa Santos 
+    given-names: Joey
+  - family-names: Reis Silva 
+    given-names: Lorrayne
+  - family-names: Oliveira Rocha 
+    given-names: Octávio
+  - family-names: de Souza Xavier
+    given-names: Vitor 
+  - family-names: José Lara Bastos 
+    given-names: Vítor
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Silva Tavares 
+    given-names: Cleiton
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Norberta de Brito 
+    given-names: Aline
+keywords:
+  - race
+  - porsche
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-1-ti5-5104100-race-engineering/
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2023-06-14

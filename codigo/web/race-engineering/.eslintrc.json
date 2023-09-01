@@ -1,0 +1,25 @@
+{
+  "extends": "next/core-web-vitals",
+  "env": {
+    "jest": true,
+    "node": true
+  },
+  "rules": {
+    "no-unused-vars": "off"
+  },
+
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/ban-ts-comment": "off"
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/ban-ts-comment": "off"
+      }
+    }
+  ]
+}

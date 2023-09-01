@@ -1,0 +1,118 @@
+{
+  "uuid": "fc13cddc-d055-4254-8d7e-0f910870c194",
+  "lastMigration": 27,
+  "name": "Raceengineer",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "4eae74de-87ec-4c0e-8905-980c2d9761f2",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "register",
+      "responses": [
+        {
+          "uuid": "2bd3892d-3825-49d2-a610-da437f7e55ba",
+          "body": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@gmail.com\",\n  \"password\": \"password123\",\n  \"type\": \"DRIVER\"\n}",
+          "latency": 0,
+          "statusCode": 201,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "4efc1289-5d64-47cd-a035-caac82cbf440",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "drivers",
+      "responses": [
+        {
+          "uuid": "4277d3eb-90d3-45c5-ba56-179b957557cf",
+          "body": "\n  {\n    \"list\": [\n      {\n        \"team\": 2,\n        \"status\": \"ACTIVE\",\n        \"nationality\": \"brazilian\",\n        \"pace\": 20,\n        \"laps\": [],\n        \"totalTime\": \"2023-04-03T08:00:00.000Z\",\n        \"total_kilometers\": 90\n      },\n      {\n        \"team\": 3,\n        \"status\": \"ACTIVE\",\n        \"nationality\": \"brazilian\",\n        \"pace\": 20,\n        \"laps\": [],\n        \"totalTime\": \"2023-04-03T08:00:00.000Z\",\n        \"total_kilometers\": 90\n      },\n      {\n        \"team\": 4,\n        \"status\": \"ACTIVE\",\n        \"nationality\": \"brazilian\",\n        \"pace\": 20,\n        \"laps\": [],\n        \"totalTime\": \"2023-04-03T08:00:00.000Z\",\n        \"total_kilometers\": 90\n      },\n      {\n        \"team\": 5,\n        \"status\": \"ACTIVE\",\n        \"nationality\": \"brazilian\",\n        \"pace\": 20,\n        \"laps\": [],\n        \"totalTime\": \"2023-04-03T08:00:00.000Z\",\n        \"total_kilometers\": 90\n      },\n      {\n        \"team\": 6,\n        \"status\": \"ACTIVE\",\n        \"nationality\": \"brazilian\",\n        \"pace\": 20,\n        \"laps\": [],\n        \"totalTime\": \"2023-04-03T08:00:00.000Z\",\n        \"total_kilometers\": 90\n      },\n      {\n        \"team\": 7,\n        \"status\": \"ACTIVE\",\n        \"nationality\": \"brazilian\",\n        \"pace\": 20,\n        \"laps\": [],\n        \"totalTime\": \"2023-04-03T08:00:00.000Z\",\n        \"total_kilometers\": 90\n      }\n    ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "4eae74de-87ec-4c0e-8905-980c2d9761f2"
+    },
+    {
+      "type": "route",
+      "uuid": "4efc1289-5d64-47cd-a035-caac82cbf440"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}

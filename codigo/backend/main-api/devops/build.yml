@@ -1,0 +1,11 @@
+pr: none
+trigger:
+  branches:
+    include:
+      - main
+      - master
+      - development
+    paths:
+      include:
+        - codigo/backend/main-api/**.ts
+        - !codigo/backend/main-api/**.md

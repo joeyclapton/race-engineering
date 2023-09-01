@@ -1,0 +1,111 @@
+/* Estilos para a imagem de fundo */
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  object-fit: cover;
+
+  /* height: 100% !important;
+  object-fit: cover; */
+}
+
+.background {
+  background-image: url("https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  height: 100vh;
+}
+
+/*ESTILOS PARA A IMAGEM ALTERNATIVO ELE ESTICA A IMAGEM MAS AGORA ELA N TA COMO BACKGROUND(ele empurra a search
+     presta atencao NO NOVO CONTAINER OQ TEM BACKGROUND IMAGE TALVEZ TU N OLHO */
+/* .container {
+  height: 100vh;
+  position: relative;
+}
+
+.image {
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.container {
+  background-image: url("https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px;
+  width: 100%;
+}
+
+ */
+
+/* Estilos para o formulário de busca E do Search Button(É uma div Tinha no orinal sim) */
+.search {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  padding-top: 4rem;
+  padding-right: 4rem;
+  text-align: center;
+  color: #fff;
+  z-index: 10;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: 3px;
+  background-color: transparent;
+  border: 1px solid #d1d5db;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 2rem;
+  /* width: 100%; n precisa  */
+}
+.search-input:focus {
+  outline: none;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* Para o Spinner  */
+.img {
+  width: 200px;
+  margin: auto;
+  display: block;
+}

@@ -1,0 +1,81 @@
+.weather {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 500px;
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+  padding: 4px;
+  color: #ffffff;
+  z-index: 10;
+}
+
+.top {
+  background-color: rgba(0, 0, 0, 0.582);
+  border-radius: 0.375rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text2xl {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 0;
+}
+
+.text9xl {
+  color: #fff;
+  font-size: 9rem;
+  line-height: 11rem;
+  margin: 0;
+}
+
+.bottom {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 8px;
+  border-radius: 0.375rem;
+  top: -32px
+}
+
+.bottomContent {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.bottomItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+.fontBold {
+  font-weight: bold;
+}
+
+.textXl {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.button {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.582);
+}

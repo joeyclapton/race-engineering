@@ -1,0 +1,38 @@
+.body{
+  background-color: lightblue ;
+  height: 100vw;
+}
+.form {
+    width: 25%;
+    height: 450px;
+    margin: 2em 0;
+    margin-left: 500px;
+    border: 3px dashed black;
+    padding: 20px;
+  }
+
+   .box{
+    padding: 10px;
+    
+  }
+ 
+   .titulo{
+    padding: auto;
+    /* margin-left: 500px; */
+    margin-bottom: 10px;
+   }
+ 
+   .logo{
+    margin-left: 600px;
+   }
+
+  .botao,.botaoinput{
+    /* margin: 10px; */
+    margin-right: 30px;
+    background-color: orange;
+    height: 30px;
+  } 
+  
+   .selecionar{
+    width: 175px;
+  }
