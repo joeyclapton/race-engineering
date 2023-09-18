@@ -26,11 +26,11 @@ No intuito de agilizar processos tecnológicos referentes a formulação de estr
 
 ## 1. Instalação das Dependências dos Projetos:
   
-  - BACKEND (API Principal) - `plf-es-2023-1-ti5-5104100-race-engineering/codigo/backend/main-api`
+  - BACKEND (API Principal) - `plf-es-2023-1-ti5-5104100-race-engineering\codigo\backend\main-api`
   
-  - BACKEND (Microserviço de Notificações) - `plf-es-2023-1-ti5-5104100-race-engineering/codigo/backend/micro-notifications`
+  - BACKEND (Microserviço de Notificações) - `plf-es-2023-1-ti5-5104100-race-engineering\codigo\backend\micro-notifications`
   
-  - FRONTEND - `plf-es-2023-1-ti5-5104100-race-engineering/codigo/web/`
+  - FRONTEND - `plf-es-2023-1-ti5-5104100-race-engineering\codigo\web\race-engineering`
   
   Abra o terminal em cada uma das pastas e execute o seguinte comando:
     
