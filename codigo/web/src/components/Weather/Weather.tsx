@@ -1,30 +1,16 @@
 import React from "react";
-import { BiChat, BiCurrentLocation, BiLike, BiShare } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
 import { IoWaterOutline } from "react-icons/io5";
 import { WiCloudyGusts, WiCloudyWindy } from "react-icons/wi";
 
 import { months } from "@/shared/mock/months";
 import {
-  Avatar,
   Box,
-  Button,
   Card,
   CardBody,
   CardFooter,
   CardHeader,
-  Center,
-  Divider,
   Flex,
-  Heading,
-  IconButton,
-  Image,
-  Stat,
-  StatArrow,
-  StatGroup,
-  StatHelpText,
-  StatLabel,
-  StatNumber,
   Text,
 } from "@chakra-ui/react";
 
