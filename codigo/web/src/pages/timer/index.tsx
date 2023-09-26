@@ -20,18 +20,26 @@ const Timer = () => {
   }, [isRunning]);
 
   useEffect(() => {
-    if (seconds === 60) {
-      setMinutes((prevMinutes) => prevMinutes + 1);
-      setSeconds(0);
-    }
+    setNewMinute();
   }, [seconds]);
 
   useEffect(() => {
+    setNewHour();
+  }, [minutes]);
+
+  const setNewHour = () => {
     if (minutes === 60) {
       setHours((prevHours) => prevHours + 1);
       setMinutes(0);
     }
-  }, [minutes]);
+  }
+
+  const setNewMinute = () => {
+    if (seconds === 60) {
+      setMinutes((prevMinutes) => prevMinutes + 1);
+      setSeconds(0);
+    }
+  }
 
   const formatNumber = (number: number) => {
     return number < 10 ? `0${number}` : number;

@@ -1,21 +1,7 @@
-import { Inter } from "next/font/google";
-import Head from "next/head";
-import NextLink from "next/link";
-
 import Sidebar from "@/components/sidebar/Sidebar";
 import {
   Box,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  Center,
   Heading,
-  HStack,
-  Image,
-  Link,
-  Stack,
-  Tag,
 } from "@chakra-ui/react";
 
 export default function Index() {
