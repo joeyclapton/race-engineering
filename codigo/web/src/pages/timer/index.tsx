@@ -8,16 +8,21 @@ const Timer = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
+  const [isRestarted, setIsRestarted] = useState(false);
 
   useEffect(() => {
-    let intervalId: NodeJS.Timeout | undefined = undefined;
-    if (isRunning) {
+    let intervalId;
+
+    if (isRunning && !isRestarted) {
       intervalId = setInterval(() => {
         setSeconds((prevSeconds) => prevSeconds + 1);
       }, 1000);
+    } else {
+      setIsRestarted(false);
     }
+
     return () => clearInterval(intervalId);
-  }, [isRunning]);
+  }, [isRunning, isRestarted]);
 
   useEffect(() => {
     setNewMinute();
@@ -41,7 +46,7 @@ const Timer = () => {
     }
   }
 
-  const formatNumber = (number: number) => {
+  const formatNumber = (number) => {
     return number < 10 ? `0${number}` : number;
   };
 
@@ -51,6 +56,14 @@ const Timer = () => {
 
   const handlePause = () => {
     setIsRunning(false);
+  };
+
+  const handleRestart = () => {
+    setIsRunning(false);
+    setIsRestarted(true);
+    setHours(0);
+    setMinutes(0);
+    setSeconds(0);
   };
 
   return (
@@ -98,6 +111,15 @@ const Timer = () => {
           borderRadius="full"
           size="sm"
           onClick={handlePause}
+        />
+
+        <IconButton
+          aria-label="Restart"
+          icon={<FaPlay />}
+          colorScheme="blue"
+          borderRadius="full"
+          size="sm"
+          onClick={handleRestart}
         />
       </Flex>
     </Box>
