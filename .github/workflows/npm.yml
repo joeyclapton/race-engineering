@@ -1,0 +1,34 @@
+name: NPM
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do Código
+      uses: actions/checkout@v2
+
+    - name: Configurar Ambiente Node.js
+      run: |
+        # Instalar Node.js (se não estiver pré-instalado)
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        nvm install 14  # Use a versão desejada do Node.js
+        node --version
+        npm --version
+
+    - name: Instalar Dependências
+      run: |
+        # Instalar dependências usando npm
+        npm install
+
+    - name: Executar Testes
+      run: |
+        # Executar seus testes usando npm
+        npm test
