@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-node@v3.8.1
 
       - name: Build
-        run: npm build
+        run: npm run build
 
       - name: Unit Test
         run: npm run test # Executada os testes de unidade
