@@ -1,34 +1,27 @@
-name: NPM
-
+name: Github CI
 on:
+  # Configura servidor de CI para executar o pipeline de tarefas abaixo (jobs) quando 
+  # um push ou pull request for realizado tendo como alvo a branch main
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
+  pipeline:
+    runs-on: ubuntu-latest # Os comandos serão executados em um sistema operacional Linux
 
     steps:
-    - name: Checkout do Código
-      uses: actions/checkout@v2
+      - name: Git Checkout
+        uses: actions/checkout@v2 # Faz o checkout do código recebido
 
-    - name: Configurar Ambiente Node.js
-      run: |
-        # Instalar Node.js (se não estiver pré-instalado)
-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-        export NVM_DIR="$HOME/.nvm"
-        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-        nvm install 14  # Use a versão desejada do Node.js
-        node --version
-        npm --version
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.8.1
 
-    - name: Instalar Dependências
-      run: |
-        # Instalar dependências usando npm
-        npm install
+      - name: Build
+        run: npm build
 
-    - name: Executar Testes
-      run: |
-        # Executar seus testes usando npm
-        npm test
+      - name: Unit Test
+        run: npm run test # Executada os testes de unidade
