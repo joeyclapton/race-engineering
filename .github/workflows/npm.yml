@@ -22,6 +22,7 @@ jobs:
 
       - name: Build
         run: npm run build
+        working-directory: ./codigo/web
 
       - name: Unit Test
         run: npm run test # Executada os testes de unidade
