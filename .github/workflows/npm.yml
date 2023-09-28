@@ -20,6 +20,9 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.8.1
 
+      - name: Setup Next.js
+        run: npm install next  
+
       - name: Build
         run: npm run build
         working-directory: ./codigo/web
