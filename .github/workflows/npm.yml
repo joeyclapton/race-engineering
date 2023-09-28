@@ -21,7 +21,10 @@ jobs:
         uses: actions/setup-node@v3.8.1
 
       - name: Setup Next.js
-        run: npm install next  
+        run: npm install next
+
+      - name: Setup Typescript
+        run: npm install --save-dev typescript @types/react @types/node
 
       - name: Build
         run: npm run build
