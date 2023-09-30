@@ -26,6 +26,9 @@ jobs:
       - name: Setup Typescript
         run: npm install --save-dev typescript @types/react @types/node
 
+      - name: Install Chakra UI
+        run: npm install @chakra-ui/react
+
       - name: Build
         run: npm run build
         working-directory: ./codigo/web
