@@ -18,18 +18,19 @@ jobs:
       - name: Git Checkout
         uses: actions/checkout@v2 # Faz o checkout do código recebido
 
-      - name: Web directory
-        run: cd codigo/web
-
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.8.1
+        working-directory: codigo/web
 
       - name: Setup dependencies
         run: npm install
+        working-directory: codigo/web
 
       - name: Build
         run: npm run build
         working-directory: ./codigo/web
+        working-directory: codigo/web
 
       - name: Unit Test
         run: npm run test # Executada os testes de unidade
+        working-directory: codigo/web
