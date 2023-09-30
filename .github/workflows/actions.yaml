@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - 'codigo/web/**'
+      - 'codigo/web'
   pull_request:
     branches:
       - main
