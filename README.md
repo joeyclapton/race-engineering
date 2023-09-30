@@ -78,6 +78,5 @@ O projeto estará disponível na URL de desenvolvimento: http://localhost:3000
     * Finalização projeto.
     * Arquitetura ATM.
     * Documentação final.
-    
 </div>
 
