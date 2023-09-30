@@ -24,6 +24,7 @@ jobs:
       - name: Set working directory and run commands
         working-directory: codigo/web
         run: |
+          npm install sharp
           npm install
           npm run build
           npm run test
