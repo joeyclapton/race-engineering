@@ -82,7 +82,7 @@ const RegisterPage = () => {
       setCircuits(circuitsResponse);
     })();
 
-    return () => {};
+    return () => { };
   }, []);
 
   const onSubmit = handleSubmit((data, event) => {

@@ -4,16 +4,16 @@ import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import {
-    RiCheckboxBlankCircleLine, RiCheckboxCircleFill, RiErrorWarningFill
+  RiCheckboxBlankCircleLine, RiCheckboxCircleFill, RiErrorWarningFill
 } from 'react-icons/ri';
 
 import BackgroundSection from '@/components/BackgroundSection';
 import api from '@/services/api';
 import { AtSignIcon, EmailIcon, LockIcon } from '@chakra-ui/icons';
 import {
-    Box, Button, Card, CardBody, CardFooter, CardHeader, FormControl, FormErrorMessage, FormLabel,
-    Heading, Highlight, Input, InputGroup, InputLeftElement, InputRightElement, List, ListIcon,
-    ListItem, Select, Text, useToast
+  Box, Button, Card, CardBody, CardFooter, CardHeader, FormControl, FormErrorMessage, FormLabel,
+  Heading, Highlight, Input, InputGroup, InputLeftElement, InputRightElement, List, ListIcon,
+  ListItem, Select, Text, useToast
 } from '@chakra-ui/react';
 
 type Register = {
