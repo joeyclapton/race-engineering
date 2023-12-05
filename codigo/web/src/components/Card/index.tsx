@@ -9,6 +9,7 @@ const Card = ({
   detail: string;
   label: string | number;
 }) => {
+  console.log("debug");
   return (
     <Stack
       direction="column"
